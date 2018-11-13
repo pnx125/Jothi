@@ -1,0 +1,1 @@
+<%@ Control Language="c#" AutoEventWireup="True" CodeFile="usrMedicalAdvSrch.ascx.cs" Inherits="KPI.PhoenixWeb.Inmate.UserControls.usrMedicalAdvSrch" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>

@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFA5834D-4F1B-4870-90C0-3D88B2DDEFE3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>PhoenixWeb.Inmate</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KPI.PhoenixWeb.Inmate</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>../../../DevBin/AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.Web.v14.1">
+      <HintPath>../../../DevBin/Infragistics45.Web.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics45.WebUI.Documents.Excel.v14.1">
+      <HintPath>../../../DevBin/Infragistics45.WebUI.Documents.Excel.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Framework.Home">
+      <HintPath>../../../DevFrwkBin/KPI.Framework.Home.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Framework.Object.Home">
+      <HintPath>../../../DevFrwkBin/KPI.Framework.Object.Home.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Framework.Object.Setup">
+      <HintPath>../../../DevFrwkBin/KPI.Framework.Object.Setup.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Framework.Setup">
+      <HintPath>../../../DevFrwkBin/KPI.Framework.Setup.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global">
+      <HintPath>../../../DevFrwkBin/KPI.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.AppException, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../../../DevFrwkBin/KPI.Global.AppException.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.CacheMgr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../../../DevFrwkBin/KPI.Global.CacheMgr.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.DAL">
+      <HintPath>../../../DevFrwkBin/KPI.Global.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../../../DevFrwkBin/KPI.Global.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.Helper.Object, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../../../DevFrwkBin/KPI.Global.Helper.Object.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.KPIWebControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../../../DevFrwkBin/KPI.Global.KPIWebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.StateMachine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../../../DevFrwkBin/KPI.Global.StateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Global.WebTemplate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>../../../DevFrwkBin/KPI.Global.WebTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Phoenix.Admission, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PhoenixBase\PhoenixWeb\Bin\KPI.Phoenix.Admission.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Phoenix.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PhoenixBase\PhoenixWeb\Bin\KPI.Phoenix.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Phoenix.Inmate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Component\KPI.Phoenix.Inmate\obj\Debug\KPI.Phoenix.Inmate.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Phoenix.Object.Admission, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PhoenixBase\PhoenixWeb\Bin\KPI.Phoenix.Object.Admission.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Phoenix.Object.Inmate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Object\KPI.Phoenix.Object.Inmate\obj\Debug\KPI.Phoenix.Object.Inmate.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Phoenix.Object.Names, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PhoenixBase\PhoenixWeb\Bin\KPI.Phoenix.Object.Names.dll</HintPath>
+    </Reference>
+    <Reference Include="KPI.Phoenix.WebControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PhoenixBase\PhoenixWeb\Bin\KPI.Phoenix.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="MemoryMappedFileStream">
+      <Name>MemoryMappedFileStream</Name>
+      <HintPath>..\..\..\..\Global\MS_MemoryMappedFile\obj\Debug\MemoryMappedFileStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Cache">
+      <Name>Microsoft.ApplicationBlocks.Cache</Name>
+      <HintPath>..\..\..\..\Global\MS_Cache\obj\Debug\Microsoft.ApplicationBlocks.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <Name>Microsoft.ApplicationBlocks.Data</Name>
+      <HintPath>..\..\..\..\Global\MS_Data\obj\Debug\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <Name>System.Core</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>../../../DevBin/Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmDoctorEntry.aspx.cs">
+      <DependentUpon>frmDoctorEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDoctorEntry.aspx.designer.cs">
+      <DependentUpon>frmDoctorEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctorSrch.aspx.cs">
+      <DependentUpon>frmDoctorSrch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDoctorSrch.aspx.designer.cs">
+      <DependentUpon>frmDoctorSrch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInmateReceipt.aspx.cs">
+      <DependentUpon>frmInmateReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInmateReceipt.aspx.designer.cs">
+      <DependentUpon>frmInmateReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInmateXML.aspx.cs">
+      <DependentUpon>frmInmateXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInmateXML.aspx.designer.cs">
+      <DependentUpon>frmInmateXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInPrisonerMedication.aspx.cs">
+      <DependentUpon>frmInPrisonerMedication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInPrisonerMedication.aspx.designer.cs">
+      <DependentUpon>frmInPrisonerMedication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarHistorySrch.aspx.cs">
+      <DependentUpon>frmMarHistorySrch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMarHistorySrch.aspx.designer.cs">
+      <DependentUpon>frmMarHistorySrch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedAllergy.aspx.cs">
+      <DependentUpon>frmMedAllergy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedAllergy.aspx.designer.cs">
+      <DependentUpon>frmMedAllergy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedCharting.aspx.cs">
+      <DependentUpon>frmMedCharting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedCharting.aspx.designer.cs">
+      <DependentUpon>frmMedCharting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedChartingHistory.aspx.cs">
+      <DependentUpon>frmMedChartingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedChartingHistory.aspx.designer.cs">
+      <DependentUpon>frmMedChartingHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedDiabetic.aspx.cs">
+      <DependentUpon>frmMedDiabetic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedDiabetic.aspx.designer.cs">
+      <DependentUpon>frmMedDiabetic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicalDentist.aspx.cs">
+      <DependentUpon>frmMedicalDentist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicalDentist.aspx.designer.cs">
+      <DependentUpon>frmMedicalDentist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicalHistory.aspx.cs">
+      <DependentUpon>frmMedicalHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicalHistory.aspx.designer.cs">
+      <DependentUpon>frmMedicalHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicalHistoryBlank.aspx.cs">
+      <DependentUpon>frmMedicalHistoryBlank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicalHistoryBlank.aspx.designer.cs">
+      <DependentUpon>frmMedicalHistoryBlank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicalLogSrch.aspx.cs">
+      <DependentUpon>frmMedicalLogSrch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicalLogSrch.aspx.designer.cs">
+      <DependentUpon>frmMedicalLogSrch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicalSrch.aspx.cs">
+      <DependentUpon>frmMedicalSrch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicalSrch.aspx.designer.cs">
+      <DependentUpon>frmMedicalSrch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicalVisit.aspx.cs">
+      <DependentUpon>frmMedicalVisit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicalVisit.aspx.designer.cs">
+      <DependentUpon>frmMedicalVisit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedication.aspx.cs">
+      <DependentUpon>frmMedication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedication.aspx.designer.cs">
+      <DependentUpon>frmMedication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicationBlank.aspx.cs">
+      <DependentUpon>frmMedicationBlank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicationBlank.aspx.designer.cs">
+      <DependentUpon>frmMedicationBlank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicationHist.aspx.cs">
+      <DependentUpon>frmMedicationHist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicationHist.aspx.designer.cs">
+      <DependentUpon>frmMedicationHist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicationRequiredListing.aspx.cs">
+      <DependentUpon>frmMedicationRequiredListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicationRequiredListing.aspx.designer.cs">
+      <DependentUpon>frmMedicationRequiredListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedSchedule.aspx.cs">
+      <DependentUpon>frmMedSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedSchedule.aspx.designer.cs">
+      <DependentUpon>frmMedSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedVitals.aspx.cs">
+      <DependentUpon>frmMedVitals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedVitals.aspx.designer.cs">
+      <DependentUpon>frmMedVitals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderEntry.aspx.cs">
+      <DependentUpon>frmOrderEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrderEntry.aspx.designer.cs">
+      <DependentUpon>frmOrderEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmScheduledAppts.aspx.cs">
+      <DependentUpon>frmScheduledAppts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmScheduledAppts.aspx.designer.cs">
+      <DependentUpon>frmScheduledAppts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrDental.ascx.cs">
+      <DependentUpon>usrDental.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrDental.ascx.designer.cs">
+      <DependentUpon>usrDental.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedCharting.ascx.cs">
+      <DependentUpon>usrMedCharting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedCharting.ascx.designer.cs">
+      <DependentUpon>usrMedCharting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedChartingHistory.ascx.cs">
+      <DependentUpon>usrMedChartingHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedChartingHistory.ascx.designer.cs">
+      <DependentUpon>usrMedChartingHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedHistCharting.ascx.cs">
+      <DependentUpon>usrMedHistCharting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedHistCharting.ascx.designer.cs">
+      <DependentUpon>usrMedHistCharting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedicalBasicSrch.ascx.cs">
+      <DependentUpon>usrMedicalBasicSrch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedicalBasicSrch.ascx.designer.cs">
+      <DependentUpon>usrMedicalBasicSrch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedicalMain.ascx.cs">
+      <DependentUpon>usrMedicalMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedicalMain.ascx.designer.cs">
+      <DependentUpon>usrMedicalMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedicalVital.ascx.cs">
+      <DependentUpon>usrMedicalVital.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedicalVital.ascx.designer.cs">
+      <DependentUpon>usrMedicalVital.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedicationHistorySupply.ascx.cs">
+      <DependentUpon>usrMedicationHistorySupply.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedicationHistorySupply.ascx.designer.cs">
+      <DependentUpon>usrMedicationHistorySupply.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedLogBasicSrch.ascx.cs">
+      <DependentUpon>usrMedLogBasicSrch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedLogBasicSrch.ascx.designer.cs">
+      <DependentUpon>usrMedLogBasicSrch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\usrMedMarBasicSrch.ascx.cs">
+      <DependentUpon>usrMedMarBasicSrch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\usrMedMarBasicSrch.ascx.designer.cs">
+      <DependentUpon>usrMedMarBasicSrch.ascx</DependentUpon>
+    </Compile>
+    <Content Include="frmDoctorEntry.aspx" />
+    <Content Include="frmDoctorEntry.js" />
+    <Content Include="frmDoctorSrch.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="frmDoctorSrch.js" />
+    <Content Include="frmInmateReceipt.aspx" />
+    <Content Include="frmInmateXML.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="frmInPrisonerMedication.aspx" />
+    <Content Include="frmInPrisonerMedication.js" />
+    <Content Include="frmMarHistorySrch.aspx" />
+    <Content Include="frmMarHistorySrch.js" />
+    <Content Include="frmMedAllergy.aspx" />
+    <Content Include="frmMedAllergy.js" />
+    <Content Include="frmMedCharting.aspx" />
+    <Content Include="frmMedCharting.js" />
+    <Content Include="frmMedChartingHistory.aspx" />
+    <Content Include="frmMedChartingHistory.js" />
+    <Content Include="frmMedDiabetic.aspx" />
+    <Content Include="frmMedDiabetic.js" />
+    <Content Include="frmMedicalDentist.aspx" />
+    <Content Include="frmMedicalDentist.js" />
+    <Content Include="frmMedicalHistory.aspx" />
+    <Content Include="frmMedicalHistory.js" />
+    <Content Include="frmMedicalHistoryBlank.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="frmMedicalLogSrch.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="frmMedicalLogSrch.js" />
+    <Content Include="frmMedicalSrch.aspx" />
+    <Content Include="frmMedicalSrch.js" />
+    <Content Include="frmMedicalVisit.aspx" />
+    <Content Include="frmMedicalVisit.js" />
+    <Content Include="frmMedication.aspx" />
+    <Content Include="frmMedication.js" />
+    <Content Include="frmMedicationBlank.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="frmMedicationHist.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="frmMedicationHist.js" />
+    <Content Include="frmMedicationRequiredListing.aspx" />
+    <Content Include="frmMedSchedule.aspx" />
+    <Content Include="frmMedSchedule.js" />
+    <Content Include="frmMedVitals.aspx" />
+    <Content Include="frmMedVitals.js" />
+    <Content Include="frmOrderEntry.aspx" />
+    <Content Include="frmOrderEntry.js" />
+    <Content Include="frmScheduledAppts.aspx" />
+    <Content Include="frmScheduledAppts.js" />
+    <Content Include="UserControls\usrDental.ascx" />
+    <Content Include="UserControls\usrMedCharting.ascx" />
+    <Content Include="UserControls\usrMedChartingHistory.ascx" />
+    <Content Include="UserControls\usrMedHistCharting.ascx" />
+    <Content Include="UserControls\usrMedicalBasicSrch.ascx" />
+    <Content Include="UserControls\usrMedicalMain.ascx" />
+    <Content Include="UserControls\usrMedicalVital.ascx" />
+    <Content Include="UserControls\usrMedicationHistorySupply.ascx" />
+    <Content Include="UserControls\usrMedLogBasicSrch.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="UserControls\usrMedMarBasicSrch.ascx" />
+    <EmbeddedResource Include="frmDoctorEntry.aspx.resx">
+      <DependentUpon>frmDoctorEntry.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoctorSrch.aspx.resx">
+      <DependentUpon>frmDoctorSrch.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInmateReceipt.aspx.resx">
+      <DependentUpon>frmInmateReceipt.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInmateXML.aspx.resx">
+      <DependentUpon>frmInmateXML.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInPrisonerMedication.aspx.resx">
+      <DependentUpon>frmInPrisonerMedication.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicalDentist.aspx.resx">
+      <DependentUpon>frmMedicalDentist.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicalHistory.aspx.resx">
+      <DependentUpon>frmMedicalHistory.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicalHistoryBlank.aspx.resx">
+      <DependentUpon>frmMedicalHistoryBlank.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicalLogSrch.aspx.resx">
+      <DependentUpon>frmMedicalLogSrch.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicalSrch.aspx.resx">
+      <DependentUpon>frmMedicalSrch.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicalVisit.aspx.resx">
+      <DependentUpon>frmMedicalVisit.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedication.aspx.resx">
+      <DependentUpon>frmMedication.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicationBlank.aspx.resx">
+      <DependentUpon>frmMedicationBlank.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicationHist.aspx.resx">
+      <DependentUpon>frmMedicationHist.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicationRequiredListing.aspx.resx">
+      <DependentUpon>frmMedicationRequiredListing.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScheduledAppts.aspx.resx">
+      <DependentUpon>frmScheduledAppts.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\usrDental.ascx.resx">
+      <DependentUpon>usrDental.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\usrMedicalBasicSrch.ascx.resx">
+      <DependentUpon>usrMedicalBasicSrch.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\usrMedicalMain.ascx.resx">
+      <DependentUpon>usrMedicalMain.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\usrMedicationHistorySupply.ascx.resx">
+      <DependentUpon>usrMedicationHistorySupply.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\usrMedLogBasicSrch.ascx.resx">
+      <DependentUpon>usrMedLogBasicSrch.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12914</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Phoenix/Inmate</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
